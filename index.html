@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jonathan's JGA 🍺</title>
+
+<meta name="theme-color" content="#ff9800">
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="hero">
+
+    <div class="beer-animation">🍺</div>
+
+    <h1>
+        Jonathan's<br>
+        Junggesellenabschied
+    </h1>
+
+    <p>
+        Der ultimative Wettkampf
+    </p>
+
+</header>
+
+
+<main>
+
+
+<section id="podium" class="podium"></section>
+
+
+<section class="stat-container">
+
+
+<div class="stat-tabs">
+
+<button onclick="showStat('bier')">
+🍺 Bier
+</button>
+
+<button onclick="showStat('mist')">
+😂 Mist
+</button>
+
+<button onclick="showStat('punkte')">
+⭐ Punkte
+</button>
+
+<button onclick="showStat('schlaege')">
+⛳ Schläge
+</button>
+
+</div>
+
+
+
+<div id="ranking"></div>
+
+
+</section>
+
+
+</main>
+
+
+
+<div id="floatingEffects"></div>
+
+
+
+<nav class="bottom-nav">
+
+<button onclick="showStat('bier')">
+🍺
+<span>Bier</span>
+</button>
+
+
+<button onclick="showStat('mist')">
+😂
+<span>Mist</span>
+</button>
+
+
+<button onclick="showStat('punkte')">
+⭐
+<span>Punkte</span>
+</button>
+
+
+<button onclick="showStat('schlaege')">
+⛳
+<span>Schläge</span>
+</button>
+
+
+<a href="admin.html">
+🔒
+<span>Admin</span>
+</a>
+
+</nav>
+
+
+
+<div id="confetti"></div>
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+if("serviceWorker" in navigator){
+
+navigator.serviceWorker.register("sw.js");
+
+}
+
+</script>
+
+
+</body>
+</html>
