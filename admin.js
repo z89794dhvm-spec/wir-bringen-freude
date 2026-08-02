@@ -439,3 +439,9 @@ reader.readAsText(file);
 
 
 }
+
+function goBack(){
+
+    window.location.href = "index.html";
+
+}
